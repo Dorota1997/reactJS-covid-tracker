@@ -18,7 +18,7 @@ const CountryPicker = ( {handleCountryChange} ) => {
 
     return (
         <FormControl className={styles.formControl}>
-            <InputLabel id="countryId">Countries</InputLabel>
+            <InputLabel id="countryId">Wybierz kraj</InputLabel>
             <Select labelId="countryId" id="selectCountry" defaultValue=""
             onChange={(e) => handleCountryChange(e.target.value)} label="Country">
                 <MenuItem value="">Global</MenuItem>

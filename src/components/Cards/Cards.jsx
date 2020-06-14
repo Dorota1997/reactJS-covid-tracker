@@ -8,7 +8,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     }
 
     return (
-        <div className="col-md-12 pt-5 container pb-5">
+        <div className="col-md-12 pt-3 container pb-2">
 
             <MDBRow className="col-md-12">
                 <MDBCard className="col-md-3 mx-auto cardWidth mb-3">
