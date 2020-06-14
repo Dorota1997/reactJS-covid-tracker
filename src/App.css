@@ -1,9 +1,49 @@
 body {
-  background-color: rgb(250, 250, 250);
+  background-color: white;
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.image {
+  width: 270px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 770px) {
+  /* .container {
+    margin: 0 10%;
+  } */
+
+  .image {
+    width: 100%;
+  }
+
+  .cardWidth {
+    min-width: 180px !important;
+  }
+}
+
+.infected {
+  color: #8BB0EC !important;
+}
+
+.recovered {
+  color: #A3BA94 !important;
+}
+
+.deaths {
+  color: #EA9A90 !important;
+}
+
+.borderLine {
+  border: 1px solid red !important;
+}
+
+.cardWidth {
+  min-width: 240px;
 }
