@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
+import styles from './CountryPicker.module.css';
+import { fetchCountries } from '../../api';
 
-const CountryPicker = () => {
+const CountryPicker = ( {handleCountryChange} ) => {
+    const [fetchedCountries, setFetchedCountries] = useState([]);
+
+    useEffect(() => {
+        const fetchAPI = async () => {
+            setFetchedCountries(await fetchCountries());
+        }
+
+        fetchAPI();
+    }, [setFetchedCountries]);
+
+    console.log(fetchedCountries);
+
     return (
-        <h1>CountryPicker</h1>
+        <FormControl className={styles.formControl}>
+            <InputLabel id="countryId">Countries</InputLabel>
+            <Select labelId="countryId" id="selectCountry" defaultValue=""
+            onChange={(e) => handleCountryChange(e.target.value)} label="Country">
+                <MenuItem value="">Global</MenuItem>
+                {fetchedCountries.map((country, i) => <MenuItem key={i} value={country}>{country}</MenuItem>)}
+            </Select>
+        </FormControl>
     )
 }
 
