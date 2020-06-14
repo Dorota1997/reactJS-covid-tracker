@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Cards, Chart, CountryPicker } from './components';
 import { fetchData } from './api';
-import covidImage from './images/covid.png';
+import covidImage from './images/covid19.jpg';
 
 class App extends React.Component {
   state = {
