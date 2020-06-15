@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchDailyData } from '../../api';
 import { Line, Bar } from 'react-chartjs-2';
-import styles from './Chart.module.css';
 
 const Chart = ({ data : { confirmed, recovered, deaths }, country }) => {
     const [ dailyData, setDailyData ] = useState({});
@@ -34,6 +33,9 @@ const Chart = ({ data : { confirmed, recovered, deaths }, country }) => {
                         fill: true
                     }]
                 }}
+                options={{
+                    title: { display: true, text: 'Zachorowania i zgony na całym świecie' }
+                }}
             />
         ) : null
     );
@@ -56,15 +58,20 @@ const Chart = ({ data : { confirmed, recovered, deaths }, country }) => {
                 }}
                 options={{
                     legend: { display: false },
-                    title: { display: true, text: `Current state in ${country}` }
+                    title: { display: true, text: `Aktualny stan w ${country}` }
                 }}
             />
         ) : null
     );
 
     return (
-        <div className={styles.container}>
-            {country ? barChart : LineChart}
+        <div className="row col-md-12">
+            <div className="col-md-6">
+                {barChart}
+            </div>
+            <div className="col-md-6">
+                {LineChart}
+            </div>
         </div>
     )
 }
