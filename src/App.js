@@ -7,12 +7,11 @@ import covidImage from './images/covid19.jpg';
 class App extends React.Component {
   state = {
     data: {},
-    country: '',
+    country: 'Poland',
   }
 
   async componentDidMount() {
-    const fetchedData = await fetchData();
-    this.setState({ data: fetchedData });
+    this.handleCountryChange(this.state.country);
   }
 
   handleCountryChange = async (country) => {
