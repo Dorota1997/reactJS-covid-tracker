@@ -19,7 +19,7 @@ const CountryPicker = ( {handleCountryChange} ) => {
     return (
         <FormControl className={styles.formControl}>
             <InputLabel id="countryId">Wybierz kraj</InputLabel>
-            <Select labelId="countryId" id="selectCountry" defaultValue=""
+            <Select labelId="countryId" id="selectCountry" defaultValue="Poland"
             onChange={(e) => handleCountryChange(e.target.value)} label="Country">
                 <MenuItem value="">Global</MenuItem>
                 {fetchedCountries.map((country, i) => <MenuItem key={i} value={country}>{country}</MenuItem>)}
