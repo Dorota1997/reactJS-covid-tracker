@@ -1,8 +1,12 @@
 <h1>Covid tracker</h1>
 
-<p align="justify"><strong>Covid tracker</strong> is application to monitor the number of illnesses, recoveries and deaths in a selected country. The default country is Poland. App used a ready API.</p>
+<p align="justify"><strong>Covid tracker</strong> is small app to monitor the number of illnesses, recoveries and deaths due to Covid in selected country.
+UI is in polish language and data is pulled from shared API available <a href="https://covid19.mathdro.id/api">here</a>. The main reason of the app was to begin learning React and create first frontend implementation in that framework. Besides React, I've used MDBootstrap and Chart.js library.
+</p>
 
 <p align="justify"><strong>Duration:</strong> 08.06.2020 - 15.06.2020</p>
+
+<h2>Preview</h2>
 
 | | |
 | :---: | :---: |
