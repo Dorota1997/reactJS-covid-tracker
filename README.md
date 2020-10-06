@@ -12,9 +12,3 @@ UI is in polish language and data is pulled from shared API available <a href="h
 | :---: | :---: |
 | <img src="https://raw.githubusercontent.com/Dorota1997/reactJS-covid-tracker/images/appImages/charts1.PNG" alt="#toadd" width="270" height="180"/> | <img src="https://raw.githubusercontent.com/Dorota1997/reactJS-covid-tracker/images/appImages/charts2.PNG" alt="#toadd" width="270" height="180"/> |
 | <img src="https://raw.githubusercontent.com/Dorota1997/reactJS-covid-tracker/images/appImages/charts3.PNG" alt="#toadd" width="200" height="240"/> | <img src="https://raw.githubusercontent.com/Dorota1997/reactJS-covid-tracker/images/appImages/charts4.PNG" alt="#toadd" width="200" height="240"/> |
-
-<h4>Technologies</h4>
-
-- React
-- MDBootstrap
-- Chart.js
